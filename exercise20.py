@@ -17,9 +17,9 @@ def binary_search(a,b):
 
 def run():
     a = sorted([random.randint(0,100) for _ in range(random.randint(0,100))])
+    print(a)
     b = int(input("Please enter a number in the range 0-99: "))
     print(binary_search(a,b))
-    print(a)
 
 
 if __name__=="__main__":
