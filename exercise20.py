@@ -7,12 +7,11 @@ def binary_search(a,b):
     c = 0
     while True:
         m_i = int((e_i + s_i)/2)
-        if m_i < s_i or m_i > e_i or m_i < 1 or c > 99: return False
-        m_e = a[m_i]
-        if m_e == b: return True
-        elif b > m_e: s_i = m_i
+        if m_i < 1 or c > 99: return False
+        if a[m_i] == b: return True
+        elif b > a[m_i]: s_i = m_i
         else: e_i = m_i
-        c +=1
+        c += 1
 
 
 def run():
